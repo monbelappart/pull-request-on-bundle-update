@@ -30,7 +30,7 @@ export PATH="/usr/local/bundle/bin:$PATH"
 if [[ -n "$BUNDLER_VERSION" ]]; then
   gem install bundler -v "$BUNDLER_VERSION"
 else
-  gem install bundler
+  bundle exec gem install bundler
 fi
 
 gem install bundler-diff
