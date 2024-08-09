@@ -19,7 +19,7 @@ fi
 
 git config --global --add safe.directory /github/workspace
 
-git remote set-url origin "https://github.com/$GIT_USER_NAME/$GITHUB_REPOSITORY.git"
+git remote set-url origin "https://github.com/$GITHUB_REPOSITORY.git"
 git fetch
 git checkout master
 BRANCH_NAME="bundle_update/$(date "+%Y%m%d_%H%M%S")"
